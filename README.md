@@ -3,7 +3,7 @@
 I made a basic platformer player controller inspired by Sonic The Hedgehog using the Godot Engine. I tried to replicate the feel of Sonic. Specifically his 3D modern version.
 
 ### controls
-Shift - Dash
-LeftCtrl - Stomp (while in air)
-WASD - movement
-Space - Jump
+##### Shift - Dash
+##### LeftCtrl - Stomp (while in air)
+##### WASD - movement
+##### Space - Jump
