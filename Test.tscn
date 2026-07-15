@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+
+[sub_resource type="NoiseTexture" id=1]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 880, 256 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( -8, 0 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( -152, 568 )
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 624, 0 )
+scale = Vector2( 3.4375, 1 )
+texture = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 624, 0 )
+shape = SubResource( 2 )
